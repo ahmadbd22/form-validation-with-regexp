@@ -1,0 +1,26 @@
+  //User Name Check With Regular Expression
+   // if (confirmPasswordElmValue === '') {
+   //    setErrorFor(confirmPasswordElm, '***User Name can not be blank')
+   // }else if(!(confirmPasswordElmValue.match(passwordElmValue))) {
+   //    setErrorFor(confirmPasswordElm, '***User Name is not valid')
+   // }else{
+   //    setSuccessFor(confirmPasswordElm, 'User Name is Valid')
+   // }
+
+
+ <!-- <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header text-center">
+              <h2>Random Password Generator</h2>
+            </div>
+            <div class="card-body">
+              <div class="input-data">
+                <div class="display">
+                  <input type="text" name="display" id="display" class="form-control">
+                  <button class="btn btn-primary my-3" id="generateBtn">Generate Password</button>
+                  <button class="btn btn-primary my-3" id="copyBtn">Copy Password</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->

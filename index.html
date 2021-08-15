@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <style>
+      .generatePasswordField, .selfPasswordField{display:none;}
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container my-5 mx-auto">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 offset-lg-2 col-md-6 col-lg-6">
+          <div class="card">
+            <div class="card-header text-center">
+              <h1>Registration Form</h1>
+            </div>
+            <div class="card-body">
+              <form id="form">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" class="form-control" />
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <label>Username</label>
+                  <input type="text" name="userName" id="userName" class="form-control"/>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="text" name="email" id="email" class="form-control"/>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text" name="phone" id="phone" class="form-control"/>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <label>Slug</label>
+                  <input type="text" name="slug" id="slug" class="form-control" />
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <label>Website URL</label>
+                  <input type="text" name="website" id="website" class="form-control"/>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="password-section">
+                  <h5>Password Options <span>(You can choose one options)</span></h5>
+                  <button class="btn btn-primary mb-4 btn-sm" id="generatePasswordFieldBtn">Generate Password</button>
+                  <button class="btn btn-primary mb-4 btn-sm" id="selfPasswordFieldBtn">Self Password</button>
+                </div>
+                <div class="form-group generatePasswordField">
+                  <label>Generate Password</label>
+                  <input type="text" name="display" id="display" class="form-control mb-2">
+                  <button class="btn btn-info" id="generateBtn">Generate</button>
+                  <button class="btn btn-warning" id="copyBtn">Copy</button>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <div class="form-group selfPasswordField">
+                  <label>Self Password</label>
+                  <input type="password" name="password" id="password" class="form-control"/>
+                  <span class="font-weight-bold"></span>
+                </div>
+                <input type="submit" value="Submit" id="submit" class="btn btn-success btn-block">
+              </form>
+            </div>
+          </div>
+        </div> <!--col-8-->
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

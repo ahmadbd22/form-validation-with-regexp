@@ -1,0 +1,25 @@
+ X(?=Y)	Positive lookahead	X if followed by Y
+X(?!Y)	Negative lookahead	X if not followed by Y
+(?<=Y)X	Positive lookbehind	X if after Y
+(?<!Y)X	Negative lookbehind	X if not after Y
+
+^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$
+
+ ^Start anchor
+  (?=. [A - Z]. [A - Z])        Ensure string has two uppercase letters.
+ (?=.* [!@#$&*]) Ensure string has one special case letter.
+ (?=. [0 - 9]. [0 - 9])        Ensure string has two digits.
+ (?=. [a - z]. [a - z].* [a - z]) Ensure string has three lowercase letters.
+ .{ 8 } Ensure string is of length 8.
+ $End anchor
+ 
+Form validation project. requirements:
+//name (Must be more than 5 character , must not contain any number special character)
+//username(Must be 5 character) /[a-zA-Z0-9]{5}/
+//email(must be valid)
+//phone number(BD based phone)
+//slug(-,_letter,number) [-_0-9a-z]/i
+//Generate strong password(search online)
+//2 button generate password, copy password
+//validate strong password
+//website address url
